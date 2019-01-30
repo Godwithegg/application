@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>js实体化盒子</title>
+<style type="text/css">
+	#box01{
+		width:100px;
+		height:100px;
+		background-color:pink;
+	}
+	
+</style>
+
+</head>
+<body>
+
+	<div id="box01"></div>
+	<div id="box02"></div>
+</body>
+</html>
+
+<script type="text/javascript">
+/*	document.getElementById('box02').style.width = '200px';
+	document.getElementById('box02').style.height = '200px';
+	document.getElementById('box02').style.background = 'red';*/
+	
+	var lch = document.getElementById('box02');
+	lch.style.width = '200px';
+	lch.style.height = '200px';
+	lch.style.background = 'blue';
+</script>

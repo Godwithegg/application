@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>js实体化盒子</title>
+<style type="text/css">
+	.myClass{
+		width:200px;
+		background:pink;
+		height:200px;
+	}
+	
+</style>
+
+</head>
+<body>
+	<div id="box"></div>
+	<button id="btn">按钮</button>
+
+</body>
+</html>
+
+<script type="text/javascript">
+	var btn = document.getElementById('btn');
+	var box = document.getElementById('box');
+	btn.onclick = function(){
+/*		box.style.width = '200px';
+		box.style.height = '200px';
+		box.style.background = 'pink';*/
+		box.className = 'myClass';
+	}
+	
+	
+</script>

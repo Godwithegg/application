@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>淘宝的下拉菜单</title>
+<style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+		list-style: none;
+	}
+	#box a{
+		text-decoration: none;
+		color: #000;
+	}
+	#box{
+		width:94px;
+		margin: 100px auto;
+		position: relative;
+	}
+	#buy{
+		width:65px;
+		height: 18px;
+		display: block;
+		border:1px solid #ccc;
+		border-bottom: none;
+		padding: 0 0 0 5px;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		z-index: 2;
+		background:#fff;
+	}
+	#box ul {
+		width:82px;
+		border:1px solid #ccc;
+		padding:5px;
+		position:absolute;
+		left: 0px;
+		top: 18px;
+		z-index: 1;
+	}
+</style>
+
+</head>
+<body>
+	<div id="box">
+		<a href="javascript:;" id="buy">我要买</a>  <!-- javascript:;代替#,空链接 -->
+		<ul>
+			<li><a href="javascript:;">搜宝贝</a></li>
+			<li><a href="javascript:;">逛商城</a></li>
+			<li><a href="javascript:;">我的足迹</a></li>
+			<li><a href="javascript:;">购物车</a></li>
+		</ul>
+	</div>
+</body>
+</html>
+
+
+<script>
+
+
+</script>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>捕获事件类型</title>
+<style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+		list-style:none;
+	}
+	#myUl{
+		width:500px;
+		margin:100px auto;
+	
+	}
+	#myUl li{
+		width:500px;
+		height:30px;
+		line-height: 30px;
+		text-align: center;
+		background:#ccc;
+		border:1px solid #000;
+	
+	}
+
+</style>
+
+
+</head>
+<body>
+
+	<ul id="myUl">
+		<li id="li01">点击</li>
+		<li id="li02">双击</li>
+		<li id="li03">鼠标移入</li>
+		<li id="li04">鼠标移出</li>
+		<li id="li05">打酱油的</li>
+	
+	</ul>
+
+
+</body>
+</html>
+<script type="text/javascript">
+	var li01 = document.getElementById('li01');
+	var li02 = document.getElementById('li02');
+	var li03 = document.getElementById('li03');	
+	var li04 = document.getElementById('li04');
+
+	li01.onclick = function(){
+		alert('单击事件被捕获');	
+	}
+	li02.ondblclick = function(){
+		alert('双击事件被捕获');
+	}	
+	li03.onmouseover = function(){
+		alert('鼠标移入事件被捕获');
+		
+	}
+	li04.onmouseout	 = function(){
+		alert('鼠标移出事件被捕获');
+	}
+	
+</script>
+
+

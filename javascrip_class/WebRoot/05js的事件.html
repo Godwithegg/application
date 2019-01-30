@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>s的事件</title>
+<style type="text/css">
+	div{
+		height:100px;
+		width:100px;
+		background:pink;
+	}
+
+</style>
+
+</head>
+<body>
+	<div id="box"></div>
+	<button id="btn01">变宽</button>
+	<button id="btn02">变高</button>
+	<button id="btn03">变色</button>
+</body>
+</html>
+
+<script type="text/javascript">
+	var btn01 = document.getElementById('btn01');
+	var btn02 = document.getElementById('btn02');
+	var btn03 = document.getElementById('btn03');
+	var box = document.getElementById('box');
+	btn01.onclick = function(){
+		box.style.width = '200px';
+	}
+	btn02.onclick = function(){
+		box.style.height = '200px';
+	}
+	btn03.onclick = function(){
+		box.style.background = 'blue';
+	}
+	
+	
+</script>
