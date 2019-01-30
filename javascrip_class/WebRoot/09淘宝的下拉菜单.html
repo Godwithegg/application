@@ -29,7 +29,7 @@
 		left: 0px;
 		top: 0px;
 		z-index: 2;
-		background:#fff;
+		background:#fff url(img/down.jpg) no-repeat right center;
 	}
 	#box ul {
 		width:82px;
@@ -38,6 +38,7 @@
 		position:absolute;
 		left: 0px;
 		top: 18px;
+		display:none;
 		z-index: 1;
 	}
 </style>
@@ -46,7 +47,7 @@
 <body>
 	<div id="box">
 		<a href="javascript:;" id="buy">我要买</a>  <!-- javascript:;代替#,空链接 -->
-		<ul>
+		<ul id="myUl">
 			<li><a href="javascript:;">搜宝贝</a></li>
 			<li><a href="javascript:;">逛商城</a></li>
 			<li><a href="javascript:;">我的足迹</a></li>
@@ -57,7 +58,18 @@
 </html>
 
 
-<script>
-
+<script type="text/javascript">
+	var myUl = document.getElementById('myUl');
+	var buy = document.getElementById('buy');
+	var box = document.getElementById('box');
+	box.onmouseover = function(){
+		myUl.style.display = 'block';
+		buy.style.backgroundImage='url(img/up.jpg)';
+	}
+	
+	box.onmouseout = function(){
+		myUl.style.display = 'none';
+		buy.style.backgroundImage='url(img/down.jpg)';
+	}
 
 </script>
