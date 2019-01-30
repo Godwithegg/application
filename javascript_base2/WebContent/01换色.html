@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>换色</title>
+<style type="text/css">
+	#box{
+		background:pink;
+		width:100px;
+		height:100px;
+	}
+
+</style>
+
+</head>
+<body>
+	<div id="box"></div>
+	<button id="btn1">变红</button>
+	<button id="btn2">变蓝</button>
+	<button id="btn3">变绿</button>
+</body>
+</html>
+
+<script type="text/javascript">
+	var btn1 = document.getElementById('btn1');
+	var btn2 = document.getElementById('btn2');
+	var btn3 = document.getElementById('btn3');
+	var box = document.getElementById('box');
+	btn1.onclick = function(){
+		box.style.background = 'red';
+	}
+	btn2.onclick = function(){
+		box.style.background = 'blue';
+	}
+	btn3.onclick = function(){
+		box.style.background = 'green';
+	}
+
+</script>
