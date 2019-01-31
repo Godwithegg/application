@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>淘宝图片切换</title>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	#con{
+		margin: 100px auto;
+		width: 360px;
+		border: 1px solid #000;
+	}
+	#con ul{
+		overflow: hidden;
+		border:1px solid #000;
+	}
+	#con ul li {
+		float: left;
+		width:70px;
+		height: 70px;
+	}
+
+</style>
+
+
+</head>
+<body>
+	<div id="con">
+		<img id="bigImg" src="switch/大路飞.jpg" width="360" height="360"/>
+		<ul>
+			<li id="li01"><img src="switch/路飞.jpg" width="70" height="70"/></li>
+			<li id="li02"><img src="switch/索隆.jpg" width="70" height="70"/></li>
+			<li id="li03"><img src="switch/香吉士.jpg" width="70" height="70"/></li>
+			<li id="li04"><img src="switch/佩罗娜.jpg" width="70" height="70"/></li>
+			<li id="li05"><img src="switch/佛朗基.jpg" width="70" height="70"/></li>
+		
+		</ul>
+	</div>
+</body>
+</html>
+
+<script type="text/javascript">
+	var bigImg = document.getElementById('bigImg');
+	/*	var li01 = document.getElementById('li01');
+	li01.mouseover = function(){
+		bigImg.src = 'switch/大路飞.jpg';
+	}
+	bigImg.mouseover = function(){
+		bigImg.src = 'switch/路飞.jpg';
+	}*/
+	function li_over(myLi,image)
+	{
+		var myNum = document.getElementById(myLi);
+		myNum.onmouseover = function(){
+			bigImg.src  = 'switch/'+image+'.jpg';
+		} 
+	}
+
+	li_over('li01', '大路飞');
+	li_over('li02', '大索隆');
+	li_over('li03', '大香吉士');
+	li_over('li04', '大佩罗娜');
+	li_over('li05', '大佛朗基');
+	
+
+</script>

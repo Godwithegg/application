@@ -42,7 +42,7 @@
 <body>
 	<div id="box">
 		<ul>
-			<li id="li01" class="current"></li>
+			<li id="li01"></li>
 			<li id="li02"></li>
 			<li id="li03"></li>
 		
@@ -54,7 +54,33 @@
 </html>
 
 <script type="text/javascript">
-	
-
+	var li01 = document.getElementById('li01');
+	var li02 = document.getElementById('li02');
+	var li03 = document.getElementById('li03');
+	var box = document.getElementById('box');
+	li01.onmouseover = function(){
+		li01.className = 'current';
+		li01.style.backgroundImage = 'url(img/bigimg1.jpg)';
+	}
+	li01.onmouseout = function(){
+		li01.className = '';
+		li01.style.backgroundImage = 'url(img/img1.jpg)';
+	}
+	li02.onmouseover = function(){
+		li02.className = 'current';
+		li02.style.backgroundImage = 'url(img/bigimg2.jpg)';
+	}
+	li02.onmouseout = function(){
+		li02.className = '';
+		li02.style.backgroundImage = 'url(img/img2.jpg)';
+	}
+	li03.onmouseover = function(){
+		li03.className = 'current';
+		li03.style.backgroundImage = 'url(img/bigimg3.jpg)';
+	}
+	li03.onmouseout = function(){
+		li03.className = '';
+		li03.style.backgroundImage = 'url(img/img3.jpg)';
+	}
 
 </script>
