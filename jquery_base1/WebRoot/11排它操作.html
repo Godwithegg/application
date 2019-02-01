@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>排它操作</title>
+<script type="text/javascript" src="jquery/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('ul li').click(function(e){
+			$(this).css('background','yellow');
+			$(this).siblings().css('background','#fff');  //选中的是除了自己之外的所有小伙伴
+		});
+	})	
+</script>
+</head>
+<body>
+	<ul>
+		<li>我是li</li>
+		<li>我是li</li>
+		<li>我是li</li>
+		<li>我是li</li>
+		<li>我是li</li>
+		<li>我是li</li>
+	
+	</ul>
+
+
+</body>
+</html>

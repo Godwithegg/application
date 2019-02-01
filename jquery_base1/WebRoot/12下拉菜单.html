@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>下拉菜单</title>
+<style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+		list-style: none;
+	}
+	#con{
+		width:400px;
+		margin: 100px auto;
+	}
+	#con ul li{
+		float: left;
+		width:100px;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		font-size: 12px;
+	}
+	#con a {
+		text-decoration: none;
+		color: #fff;
+		display: block;
+		width:100px;
+		height: 30px;
+		background:#ccc;
+	}
+	#con a:HOVER {
+		background:pink;
+	}
+	#con ul ul {
+		display: none;
+	}
+
+
+</style>
+<script type="text/javascript" src="jquery/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		/* $('.demo>li').mouseover(function(e){
+			$(this).children('ul').stop().slideDown(1000);
+		});
+		$('.demo>li').mouseout(function(e){
+			$(this).children('ul').stop().slideUp();
+		}); */
+		
+		/* $('.demo>li').hover(function(){
+			//这里表示鼠标移入要执行的事情
+			$(this).children('ul').stop().slideDown(1000);//也可以用slideToggle
+		},function(){
+			//这里表示鼠标移出要执行的事情
+			$(this).children('ul').stop().slideUp();
+		}); */
+		
+		$('.demo>li').hover(function(){
+			//如果只写一个匿名函数，表示鼠标移入移出代码是一样的
+			$(this).children('ul').stop().slideToggle(1000);
+		})
+	})
+</script>
+</head>
+<body>
+	<div id="con">
+		<ul class="demo">
+			<li id="li01">
+				<a href="javascript:;">平面设计</a>
+				<ul id="ul01">
+					<li><a href="javascript:;">平面内容</a></li>
+					<li><a href="javascript:;">平面内容</a></li>
+					<li><a href="javascript:;">平面内容</a></li>
+					<li><a href="javascript:;">平面内容</a></li>
+				</ul>
+			</li>
+			<li id="li02">
+				<a href="javascript:;">网页设计</a>
+				<ul id="ul02">
+					<li><a href="javascript:;">网页内容</a></li>
+					<li><a href="javascript:;">网页内容</a></li>
+					<li><a href="javascript:;">网页内容</a></li>
+					<li><a href="javascript:;">网页内容</a></li>
+				</ul>
+			</li>
+			<li id="li03">
+				<a href="javascript:;">SEO优化</a>
+				<ul id="ul03">
+					<li><a href="javascript:;">SEO内容</a></li>
+					<li><a href="javascript:;">SEO内容</a></li>
+					<li><a href="javascript:;">SEO内容</a></li>
+					<li><a href="javascript:;">SEO内容</a></li>
+				</ul>
+			</li>
+			<li id="li04">
+				<a href="javascript:;">UI设计</a>
+				<ul id="ul04">
+					<li><a href="javascript:;">UI内容</a></li>
+					<li><a href="javascript:;">UI内容</a></li>
+					<li><a href="javascript:;">UI内容</a></li>
+					<li><a href="javascript:;">UI内容</a></li>
+				</ul>
+			</li>
+		</ul>
+
+
+</body>
+</html>
