@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jq控制html标签属性</title>
+
+<script type="text/javascript" src="jquery/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('button').click(function(e){
+			//$('div').attr('title','我是被jq修改过的');
+			//alert($('div').attr('title'));
+			$('div').attr({'title':'我是被jq修改的','class':'myclass'});
+		})
+		
+	})
+	
+</script>
+
+
+</head>
+<body>
+	<button>按钮</button>
+	<div title="我是title">标题</div>
+
+</body>
+</html>

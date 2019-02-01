@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jq的基础选择器</title>
+
+<style type="text/css">
+	div{
+		width:200px;
+		height: 200px;
+		background:#ccc;
+		border:1px solid #000;
+		padding:10px;
+	}
+	button{
+		position: fixed;
+		top: 0px;
+		left: 300px;
+	}
+</style>
+<script type="text/javascript" src="jquery/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('button').click(function(e){
+			//$('#box').css('background','yellow');   id选择器
+			//$('.myclass').css('background','yellow'); class选择器
+			//$('*').css('background','yellow');  全局选择器
+			//$('h1,h2,h3').css('background','yellow');	多条件选择器
+			//$('.ul01 li').css('background','yellow');  后代选择器
+			//$('.da>div').css('background','yellow');   子代选择器，只会选择下一级的
+			//$('.myclass02+li').css('background','yellow'); 选择同级的下一个
+			//$('.myclass01~li').css('background','yellow');  往后同一级的所有元素被选择
+			
+			
+		})
+		
+	})
+
+</script>
+
+</head>
+<body>
+	<button>按钮</button>
+
+	<p class="myclass">这是一个段落</p>
+	<p>这是一个段落</p>
+	<p>这是一个段落</p>
+	<h1>这是一个标题</h1>
+	<h2>这是一个标题</h2>
+	<h3>这是一个标题</h3>
+	<div class="myclass">这是一个有class的盒子</div>
+	<div id="box">这是一个盒子有id</div>
+	<div>这是一个盒子</div>
+	<ul class="ul01">
+		<li class="myclass01">第一级li
+			<ul>
+				<li>第二级的li标签</li>
+				<li>第二级的li标签</li>
+				<li>第二级的li标签</li>
+			</ul>
+		</li>
+		<li class="myclass02">第一22222222级li</li>
+		<li class="myclass03">第33333一级li</li>
+	</ul>
+	<ol>
+		<li>有序</li>
+		<li>有序</li>
+		<li>有序</li>
+	</ol>
+	
+	<div class="da">老爷子
+		<div class="zhong">大儿子
+			<div class="xiao">大孙子</div>
+		</div><br/><br/><br/>
+		
+		<div class="zhong">二儿子
+			<div class="xiao">二孙子</div>
+		</div><br/><br/><br/>
+		
+		<div class="zhong">三儿子
+			<div class="xiao">三孙子</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jq简单动画</title>
+
+<script type="text/javascript" src="jquery/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		//对角线动画
+/*		
+		$('button').eq(0).click(function(){
+			$('img').hide(1000);
+		});
+		$('button').eq(1).click(function(){
+			$('img').show(1000);
+		});
+		$('button').eq(2).click(function(){
+			$('img').toggle(1000);
+		});
+*/
+		//滑动动画
+		$('button').eq(0).click(function(){
+			$('img').slideUp(1000);
+		})
+		$('button').eq(1).click(function(){
+			$('img').slideDown(1000);
+		})
+		$('button').eq(2).click(function(){
+			$('img').slideToggle(1000);
+		})
+		
+	})
+
+</script>
+
+
+
+</head>
+<body>
+
+	<button>隐藏</button>
+	<button>显示</button>
+	<button>切换</button><br/>
+	<img src="img/大佛朗基.jpg" width="360px" height="360px"/>
+</body>
+</html>

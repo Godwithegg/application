@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jq控制css</title>
+<style type="text/css">
+	div{
+		width:100px;
+		height: 100px;
+		background:pink;
+	}
+
+</style>
+
+<script type="text/javascript" src="jquery/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('button').eq(0).click(function(e){
+			$('div').css('width','200px');
+		});
+		$('button').eq(1).click(function(e){
+			$('div').css('height','200px');
+		});
+		$('button').eq(2).click(function(e){
+			$('div').css('background','blue');
+		});
+		$('button').eq(3).click(function(e){
+			$('div').css({'width':'200px','height':'200px','backgroundColor':'blue'});
+		});
+		$('button').eq(4).click(function(e){
+			alert($('div').css('width'));
+		});
+	});
+
+</script>
+
+</head>
+<body>
+
+	<button>变宽</button>
+	<button>变高</button>
+	<button>变色</button>
+	<button>宽、高、色</button>
+	<button>获取</button>
+	<div></div>
+</body>
+</html>

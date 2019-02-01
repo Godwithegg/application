@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>过滤选择器</title>
+<style type="text/css">
+	button{
+		position: fixed;
+		left: 300px;
+		top: 0;
+	}
+</style>
+<script src="jquery/jquery-1.7.2.min.js" type="text/javascript" type="text/javascript"></script>
+<script type="text/javascript">
+	$(function(){
+		$('button').click(function(e){
+			//$('.ul01 li:first').css('background','yellow');   第一个
+			//$('.ul01 li:last').css('background','yellow');	最后一个
+			//$('.ul01 li:not(.myclass01)').css('background','yellow'); 除了此个之外所有
+			//$('.ul01 li:eq(0)').css('background','yellow');	等于这个，下标从0开始
+			//$('.ul01 li:gt(0)').css('background','yellow');	大于该下标的所有
+			//$('.ul01 li:lt(4)').css('background','yellow');		小于该下标的所有
+			
+		})
+		
+	})
+
+</script>
+
+</head>
+<body>
+	<button>按钮</button>
+	<p class="myclass">这是一个段落</p>
+	<p>这是一个段落</p>
+	<p>这是一个段落</p>
+	<h1>这是一个标题</h1>
+	<h2>这是一个标题</h2>
+	<h3>这是一个标题</h3>
+	<div class="myclass">这是一个盒子</div>
+	<div id="box">这是一个盒子有id</div>
+	<div>这是一个盒子</div>
+	<ul class="ul01">
+		<li class="myclass01">第一级li0000</li>
+		<li class="myclass02">第一级li1111</li>
+		<li class="myclass03">第一级li索引值为2</li>
+		<li class="myclass03">第一级索引值为3li</li>
+		<li class="myclass03">第一级li索引值为4</li>
+		<li class="myclass03">第一级索引值为5li</li>
+		<li class="myclass03">索引值为6</li>
+	</ul>
+	
+	<ol>
+		<li>有序</li>
+		<li>有序</li>
+		<li>有序</li>
+	</ol>
+	
+	<div class="da">老爷子
+		<div class="zhong">大儿子
+			<div class="xiao">大儿子的儿子</div>
+		</div><br/><br/><br/>
+		
+		<div class="zhong">二儿子
+			<div class="xiao">二儿子的儿子</div>
+		</div><br/><br/><br/>
+		
+		<div class="zhong">三儿子
+			<div class="xiao">三儿子的儿子</div>
+		</div>
+	</div>
+
+</body>
+</html>
