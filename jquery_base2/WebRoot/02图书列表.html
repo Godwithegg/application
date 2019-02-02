@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>图书列表</title>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding:0;
+		list-style: none;
+	}
+	.con{
+		width:360px;
+		margin: 100px auto;
+		border: 1px solid #000;
+		text-align: center;
+	}
+	.con ul li img {
+		display: none;
+	}
+	.con ul li {
+		color:gold;
+		padding:10px;
+		border-bottom: 1px dashed #000;
+	}
+</style>
+<script type="text/javascript" src="jquery/jquery/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('.con ul li').hover(function(e){
+			$(this).children().toggle();
+		})
+		
+		/*
+		$('.con ul li').hover(function(e){
+			$(this).children('img').show();
+			$(this).children('p').hide();
+		},function(e){
+			$(this).children('p').show();
+			$(this).children('img').hide();
+		});*/
+		
+/*		$('.con ul li').mouseover(function(e){
+			$(this).children('img').show();
+			$(this).children('p').hide();
+		});
+		$('.con ul li').mouseout(function(e){
+			$(this).children('p').show();
+			$(this).children('img').hide();
+		});
+*/
+	})
+</script>
+</head>
+<body>
+	<div class="con">
+		<img src="img/大佛朗基.jpg" width="360px" height="360px">
+		<ul>
+			<li>
+				<p>怎么在不为人知的情况 15.10元</p>
+				<img src="img/佛朗基.jpg" width="70px" height="70px">
+			</li>
+			<li>
+				<p>怎么在不为人知的情况 15.10元</p>
+				<img src="img/佛朗基.jpg" width="70px" height="70px">
+			</li>
+			<li>
+				<p>怎么在不为人知的情况 15.10元</p>
+				<img src="img/佛朗基.jpg" width="70px" height="70px">
+			</li>
+			<li>
+				<p>怎么在不为人知的情况 15.10元</p>
+				<img src="img/佛朗基.jpg" width="70px" height="70px">
+			</li>
+		</ul>
+	</div>
+
+</body>
+</html>
