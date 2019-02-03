@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>新闻发布</title>
+
+<script type="text/javascript" src="jquery/jquery/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+	$(function(e){
+		$('button').click(function(e){
+			//获取input中的value
+			//$('input').val();  //val里面写代表设置，不写代表获取
+			var myVal = $('input').val();
+			var myTag = $('<li>'+myVal+'</li>');
+			$('ul').prepend(myTag);
+			$('input').val('');
+		})
+		
+	})
+</script>
+</head>
+<body>
+	发布新闻:<input type="text"/><br/>
+	<button>发布</button><br/>
+	<ul>
+		
+	</ul>
+</body>
+</html>
