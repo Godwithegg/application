@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>替换节点</title>
+<script type="text/javascript" src="jquery/jquery/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('button').click(function(){
+			$('div').replaceWith('<h1>我变h了</h1>');   //替换成新的节点
+			//$('div').html('<h1>我也是h1</h1>');   //区别是节点保留
+		})
+	})
+
+
+</script>
+
+</head>
+<body>
+	<button>替换</button>
+	<div>
+		我是div
+	</div>
+</body>
+</html>

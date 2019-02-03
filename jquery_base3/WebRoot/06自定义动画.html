@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>自定义动画</title>
+<style type="text/css">
+	div{
+		width:100px;
+		height: 100px;
+		background:pink;
+		position: absolute;
+		left: 0;
+		top: 200px;
+	}
+</style>
+<script type="text/javascript" src="jquery/jquery/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('button').click(function(){
+			//$('div').animate({'left':'500px'},500).delay(2000).animate({'top':'500px'},500);
+		
+			//使用自定义动画模拟slidedown效果
+			//$('div').css('height','0px').animate({'height':'100px'},500);
+			
+			$('div').css('background-color','#ffffff').animate({'backgroundColor':'#000000'},5000);
+			//自定义动画只能定义带数值的，例如色彩是不行的
+		})
+	})
+
+</script>
+</head>
+<body>
+	<button>动起来</button>
+	<div></div>
+</body>
+</html>

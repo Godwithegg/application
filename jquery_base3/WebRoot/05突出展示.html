@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>突出展示</title>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding:0;
+		list-style: none;
+	}
+	body{
+		background:#000;
+	}
+	.con{
+		width:630px;
+		height: 390px;
+		padding:10px 0 0 10px;
+		margin: 100px auto;
+		border:1px solid #fff;
+	}
+	.con ul li{
+		float: left;
+		width:200px;
+		height: 186px;
+		margin: 0 10px 10px 0;
+	}
+</style>
+<script type="text/javascript" src="jquery/jquery/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('.con ul li').mouseover(function(e){
+			$(this).stop().fadeTo(500,1).siblings().stop().fadeTo(500,0.5);
+		})
+		
+	})
+
+</script>
+</head>
+<body>
+	<div class="con">
+		<ul>
+			<li><img src="images/01.jpg"></li>
+			<li><img src="images/02.jpg"></li>
+			<li><img src="images/03.jpg"></li>
+			<li><img src="images/04.jpg"></li>
+			<li><img src="images/05.jpg"></li>
+			<li><img src="images/06.jpg"></li>
+		</ul>
+	
+	</div>
+</body>
+</html>

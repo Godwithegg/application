@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>微博</title>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding:0;
+		list-style: none;
+	}
+	.con{
+		width:600px;
+		padding:10px;
+		margin: 100px auto;
+		border:1px solid #000;
+	}
+	.con textarea{
+		width:460px;
+		height: 160px;
+		resize:none;
+	}
+	.con ul{
+		width:500px;
+		margin: 0 auto;
+	}
+	.con ul li{
+		border-bottom: 1px dashed #ccc;
+		line-height: 32px;
+	}
+	
+	
+</style>
+<script type="text/javascript" src="jquery/jquery/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+	$(function(e){
+		$('button').click(function(e){
+			var myVal = $.trim($('textarea').val());
+			if(myVal == ''){//如果用户没有输入任何文字
+				alert('请输入文字后再点击提交按钮');
+				$('input').val('');
+			}else if(myVal.length >= 120){//如果用户输入的文字太长了，超过120个字我们就提示用户不能这么做
+				alert('输入的文字不能超过120')
+			}else{
+				var myTag = $('<li>'+myVal+'</li>');
+				$('.con ul').prepend(myTag);
+				$('textarea').val('');
+				$('.con ul li:first').hide().slideDown();
+			}
+		})
+	})
+</script> 
+
+</head>
+<body>
+	<div class="con">
+		微博内容:<textarea></textarea><button>发布</button>
+		<br/>
+		<ul>
+			<li>我是临时的li</li>
+		</ul>
+	</div>
+
+
+</body>
+</html>

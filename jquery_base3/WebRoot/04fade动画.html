@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>fade动画</title>
+<style type="text/css">
+	div{
+		width:100px;
+		height: 100px;
+		background:pink;
+	}
+</style>
+<script type="text/javascript" src="jquery/jquery/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('button').eq(0).click(function(e){
+			$('div').fadeOut();
+		})
+		$('button').eq(1).click(function(e){
+			$('div').fadeIn();
+		})
+		$('button').eq(2).click(function(e){
+			$('div').fadeToggle();
+		})
+		$('button').eq(3).click(function(e){
+			$('div').fadeTo(500,0.1);
+		})
+	})
+</script>
+</head>
+<body>
+	<button>隐藏</button>
+	<button>显示</button>
+	<button>切换</button>
+	<button>透明度</button><br/>
+	<div></div>
+
+</body>
+</html>

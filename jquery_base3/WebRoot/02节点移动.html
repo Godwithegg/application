@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>吃饭睡觉打豆豆</title>
+<script type="text/javascript" src="jquery/jquery/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('button').click(function(){
+			//$('ul li').eq(0).insertAfter($('ul li').eq(2));//睡觉 打豆豆 吃饭
+			$('ul li').eq(0).insertBefore($('ul li').eq(2)); //睡觉 吃饭 打豆豆
+		})
+	})
+
+</script>
+</head>
+<body>
+	<button>换一个乐趣</button>
+	<ul>
+		<li>吃饭</li>
+		<li>睡觉</li>
+		<li>打豆豆</li>
+	</ul>
+
+</body>
+</html>
