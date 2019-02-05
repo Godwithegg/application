@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>突出展示效果</title>
+<style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+		list-style: none;
+	}
+	.con{
+		width:790px;
+		height: 362px;
+		border:1px solid #000;
+		margin: 100px auto;
+		background:#000;
+	}
+	.con ul li{
+		float: left;
+		width:158px;
+		height: 362px;
+		overflow: hidden;
+	}
+	.con img {
+		display: block;
+	}
+	.con a{
+		display: block;
+	}
+</style>
+<script type="text/javascript" src="jquery/jquery/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('.con ul li a').hover(function(){
+			//$('.con ul li a').stop().animate({'magrin-left':'0px','opacity':'0.5'},500);
+			//$(this).stop().animate({'margin-left':'-15px','opacity':'1'},500);
+			
+			//$(this).parent().parent().find('a').stop().animate({'margin-left':'0px','opacity':'0.5'},500);
+			//$(this).stop().animate({'margin-left':'-15px','opacity':'1'},500);	
+			
+			$(this).closest('ul').find('a').stop().animate({'margin-left':'0px','opacity':'0.5'},500);
+			$(this).stop().animate({'margin-left':'-15px','opacity':'1'},500);	
+		},function(){
+			//$('.con ul li a').stop().animate({'margin-left':'0px','opacity':'1'},500);
+			//$(this).parent().parent().find('a').stop().animate({'margin-left':'0px','opacity':'1'},500);
+			$(this).closest('ul').find('a').stop().animate({'margin-left':'0px','opacity':'1'},500);
+		})
+	})
+</script>
+</head>
+<body>
+	<div class="con">
+		<ul>
+			<li>
+				<a href="javascript:;"><img src="images/01.jpg" width="173px" height="181px"></a>
+				<a href="javascript:;"><img src="images/02.jpg" width="173px" height="181px"></a>
+			</li>
+			<li><a href="javascript:;"><img src="images/03.jpg" width="173px" height="362px"></a></li>
+			<li>
+				<a href="javascript:;"><img src="images/04.jpg" width="173px" height="181px"></a>
+				<a href="javascript:;"><img src="images/05.jpg" width="173px" height="181px"></a>
+			</li>
+			<li><a href="javascript:;"><img src="images/06.jpg" width="173px" height="362px"></a></li>
+			<li>
+				<a href="javascript:;"><img src="images/01.jpg" width="173px" height="181px"></a>
+				<a href="javascript:;"><img src="images/02.jpg" width="173px" height="181px"></a>
+			</li>
+		</ul>
+	</div>
+
+</body>
+</html>

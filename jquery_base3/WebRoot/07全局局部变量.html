@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>全局局部变量</title>
+<script type="text/javascript" src="jquery/jquery/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+	var tv = '电视';  //全局变量 可以被任何人修改也可以被任何人获取
+	
+	$(function(){//我的家
+		//var tv = '电视';   //局部变量
+		alert(tv);
+	})
+	$(function(){//隔壁老王
+		alert(tv);
+	})
+</script>
+
+</head>
+<body>
+
+</body>
+</html>
