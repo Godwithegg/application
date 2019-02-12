@@ -1,0 +1,41 @@
+<html lang="zh-cmn-Hans">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap-4.2.1-dist/css/bootstrap.min.css">
+    
+    <title>bootstrap的基本配置</title>
+</head>
+
+<body>
+   
+    <div class="tab-content py-5">
+        <div id="east" class="tab-pane active">
+            <p>
+                2018东部冠军是
+                <span class="font-weight-bold text-success" title="赢了"
+                data-toggle="tooltip" data-placement="top">我</span>还是
+                <span class="font-weight-bold text-danger" title="没输"
+                data-toggle="tooltip" data-placement="bottom">蛋黄</span>。
+                
+            </p>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../bootstrap-4.2.1-dist/others/jquery-3.2.1.slim.min.js"></script>
+    <script src="../bootstrap-4.2.1-dist/others/popper-1.12.9.min.js"></script>
+    <script src="../bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
+    <script>
+        $(function(){
+            'use strict';
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</body>
+
+</html>
