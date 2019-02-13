@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../bootstrap-4.2.1-dist/css/bootstrap.min.css">
+    <title>多种类型框</title>
+</head>
+<body>
+    <form role="form">
+        <input type="text" class="form-control">
+        <textarea class="form-control" rows="5">Hello</textarea>  <!--文本域-->
+        
+        <div class="checkbox">  <!--复选框-->
+            <label>
+                <input type="checkbox" value="">
+                敲代码
+            </label>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="">
+                看代码
+            </label>
+        </div>
+
+        <div class="radio">   <!--单选框-->
+            <label>
+                <input name="radiosex" type="radio" checked>男
+            </label>
+        </div>
+        <div class="radio">   <!--单选框-->
+            <label>
+                <input name="radiosex" type="radio">女
+            </label>
+        </div>
+
+        <select multiple class="form-control">    <!--下拉菜单-->
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
+
+        <p class="form-control-static">请按照我的格式输入:675175647@qq.com</p>
+
+        <input class="form-control" type="text" placeholder="hello" disabled>   <!--禁用输入--><!--全局禁用用fieldset-->
+        
+        <input class="form-control" type="text" readonly>   <!--只读-->
+    </form>
+</body>
+</html>
