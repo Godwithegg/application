@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../bootstrap-4.2.1-dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="btn-group">     <!--分裂式下拉菜单-->
+            <button type="button" class="btn btn-info">分裂式下拉菜单</button>
+            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="#" class="dropdown-item">一</a></li>
+                <li><a href="#" class="dropdown-item">二</a></li>
+                <li><a href="#" class="dropdown-item">三</a></li>
+                <li><a href="#" class="dropdown-item">四</a></li>
+            </ul>
+        </div>
+        <br/><br/><br/><br/><br/><br/><br/>
+        <div class="btn-group dropup">     <!--分裂式上拉图标-->
+                <button type="button" class="btn btn-info">分裂式上拉菜单</button>
+                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#" class="dropdown-item">一</a></li>
+                    <li><a href="#" class="dropdown-item">二</a></li>
+                    <li><a href="#" class="dropdown-item">三</a></li>   
+                    <li><a href="#" class="dropdown-item">四</a></li>
+                </ul>
+            </div>
+    </div>
+
+    <script src="../bootstrap-4.2.1-dist/others/jquery-3.3.1.min.js"></script>
+    <script src="../bootstrap-4.2.1-dist/others/popper-1.12.9.min.js"></script>
+    <script src="../bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
